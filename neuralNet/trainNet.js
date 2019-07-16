@@ -1,5 +1,5 @@
 const brain = require('brain.js/index')
-const trainingData = require('./multiLabelTrainingData.js')
+const trainingData = require('./singleLabelTrainingData.js')
 const fs = require('fs')
 
 /*
@@ -29,7 +29,7 @@ console.log('📈 Data prepared\n')
 
 const config = {
     binaryThresh: 0.5,
-    hiddenLayers: [3],
+    hiddenLayers: [1],
     activation: 'sigmoid'
 };
 
